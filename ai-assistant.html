@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CE-Teach.me</title>
+    <meta name="description" content="a friendly community where you can learn coding and electronics">
+    <meta name="keywords" content="Code & Tech Learning,Friendly Electronics,Learn to Code,Interactive Coding,Tech Education">
+    <meta name="author" content="Omar Amer">
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="./icons/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+    <iconify-icon icon="solar:user-bold"></iconify-icon>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <div class="icon">
+                <h2 class="logo"><a href="index.html" class="logo-link">CE-Teach.me</a></h2>
+            </div>            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="ai-assistant.html">AI Assistant</a></li>
+                <li><a href="learn-to-code.html">Learn To Code</a></li>
+                <li><a href="Learn Electronics.html">Learn Electronics</a></li>
+                <li><a href="circuit-simulator.html">Circuit Simulator</a></li>
+                <li><a href="#">Arduino Simulator</a>
+                    <div class="arduino-menu">
+                        <ul>
+                            <li><a href="arduino-simulator.html">Arduino Uno</a></li>
+                            <li><a href="arduino-mega.html">Arduino Mega</a></li>
+                            <li><a href="arduino-nano.html">Arduino Nano</a></li>
+                            <li><a href="raspberry-pi-pico.html">Raspberry Pi Pico</a></li>
+                            <li><a href="esp-32-board.html">ESP32 BOARD</a></li>
+                            <li><a href="micropython-on-esp-32.html">MicroPython on ESP32</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="editor.html">Code Editor</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <!-- Content for the AI Chatbot -->
+
+        <button data-modal-target="#modal" class="button1">How To Use It</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">How To Use It</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="hi">Gemini Assistant offers versatile coding assistance in these ways:</span><span>1. Syntax Correction: Fixes syntax errors in your code.</span><span>2. Code Examples: Provides code samples for various languages.</span><span>3. Code Explanation: Explains code step-by-step.</span><span>4. Algorithm Help: Assists with algorithms and data structures.</span><span>5. Debugging: Identifies and helps fix bugs.</span><span>6. Language Insights: Explains programming languages and libraries.</span><span>7. Web Development: Supports HTML, CSS, JS, frameworks.</span><span>8. Database Aid: Helps with queries, design, and management.</span><span>9. API Integration: Guides using external APIs.</span><span>10. Best Practices: Advises on coding standards.</span><span>11. Project Guidance: Offers project structuring advice.</span><span>12. Concept Clarification: Explains programming concepts.</span><span>Please note:</span><span>This version answers one input and does not remember the previous entries</span><span>that while it can provide a lot of support for coding-related tasks, complex or large-scale projects might require human expertise and collaboration. Also, keep in mind that it don't have access to real-time information, so its knowledge is based on the data available up to September 2021. If there have been significant changes or advancements in the coding world since then, it may not be aware of them.</span></p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+
+        <div id="chat-window">
+          <div class="main-title"></div>
+          <div id="chat-messages"></div>
+          <form id="chat-form">
+            <input
+              type="text"
+              id="chat-input"
+              autocomplete="off"
+              placeholder="Enter a prompt here"
+              required
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+        <script src="app.js"></script>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-bar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

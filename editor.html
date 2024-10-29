@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CE-Teach.me</title>
+    <meta name="description" content="a friendly community where you can learn coding and electronics">
+    <meta name="keywords" content="Code & Tech Learning,Friendly Electronics,Learn to Code,Interactive Coding,Tech Education">
+    <meta name="author" content="Omar Amer">
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="./icons/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+    <iconify-icon icon="solar:user-bold"></iconify-icon>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <div class="icon">
+                <h2 class="logo"><a href="index.html" class="logo-link">CE-Teach.me</a></h2>
+            </div>            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ai-assistant.html">AI Assistant</a></li>
+                <li><a href="learn-to-code.html">Learn To Code</a></li>
+                <li><a href="Learn Electronics.html">Learn Electronics</a></li>
+                <li><a href="circuit-simulator.html">Circuit Simulator</a></li>
+                <li><a href="#">Arduino Simulator</a>
+                    <div class="arduino-menu">
+                        <ul>
+                            <li><a href="arduino-simulator.html">Arduino Uno</a></li>
+                            <li><a href="arduino-mega.html">Arduino Mega</a></li>
+                            <li><a href="arduino-nano.html">Arduino Nano</a></li>
+                            <li><a href="raspberry-pi-pico.html">Raspberry Pi Pico</a></li>
+                            <li><a href="esp-32-board.html">ESP32 BOARD</a></li>
+                            <li><a href="micropython-on-esp-32.html">MicroPython on ESP32</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active"><a href="editor.html">Code Editor</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+            <button data-modal-target="#modal" class="button1">How To Use It</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">How To Use It</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="hi">An HTML, CSS, and JavaScript code editor is a software tool that allows you to write, edit, and test code for web development. These editors are commonly used by web developers and designers to create and maintain websites and web applications.</p>
+                </div>
+            </div>
+            <div id="overlay"></div>
+
+            <div class="code-editor">
+                <div class="code">
+                    <div class="code-section">
+                        <div class="code-title">
+                            <h1><img src="images/html.png" alt="">HTML</h1>
+                        </div>
+                        <div id="html-code"></div>
+                    </div>
+                    <div class="code-section">
+                        <div class="code-title">
+                            <h1><img src="images/CSS.png" alt="">CSS</h1>
+                        </div>
+                        <div id="css-code"></div>
+                    </div>
+                    <div class="code-section">
+                        <div class="code-title">
+                            <h1><img src="images/js.png" alt="">JavaScript</h1>
+                        </div>
+                        <div id="js-code"></div>
+                    </div>
+                </div>
+                <iframe id="result"></iframe>
+            </div>
+            <script src="edit.js"></script>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
